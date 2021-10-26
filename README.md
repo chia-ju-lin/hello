@@ -11,3 +11,4 @@ Exercise1:
 1. Todo:Resolve issue : Encoding the entire query string will also encode the = and & separators, which is not correct.
 
 
+![image](https://user-images.githubusercontent.com/89087221/138819458-1bcd295e-ed7a-4028-a365-c23ee8aedd65.png)
