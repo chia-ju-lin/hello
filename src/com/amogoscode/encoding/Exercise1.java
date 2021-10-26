@@ -26,8 +26,11 @@ public class Exercise1 {
         System.out.println("asciiEncodedString: "+asciiEncodedString);
 
 
-        // encode to URL
+        // urlEncoding: replacing URL reserved characters with their UTF-8 encoding
         String q = "dddd<script>";
+        q = "http://localhost:8080/servlet?param=value&param1=value1#";
+        //urlEncoding output: http%3A%2F%2Flocalhost%3A8080%2Fservlet%3Fparam%3Dvalue%26param1%3Dvalue1%23
+        //urlEncoding problem: /, ? , = , and # are also encoded
         String urlEncodedString = URLEncoder.encode(q, "UTF-8");
         System.out.println("urlEncodedString: "+urlEncodedString);
 
@@ -39,6 +42,7 @@ public class Exercise1 {
 
 
         //Todo: Encoding the entire query string will also encode the = and & separators, which is not correct.
+        //http://localhost:8080/servlet?param=value  request.getQueryString: param=value
 
 
 
