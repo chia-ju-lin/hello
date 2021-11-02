@@ -1,16 +1,14 @@
 package com.amogoscode.encoding;
 
-import com.sun.deploy.net.URLEncoder;
-
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Exercise1 {
     public static void main(String[] args) throws UnsupportedEncodingException {
-
+        System.out.println("aaa");
 
         String input = "aaaa/bbbb/ccccc/dddd<script>";
         System.out.println("input: "+input);
